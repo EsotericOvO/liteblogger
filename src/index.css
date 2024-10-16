@@ -1,9 +1,20 @@
+:root {
+    --cw: #ffffff;
+    --c1: #ff4d4d;
+    --c2: #990000;
+    --c3: #330000;
+    --cb: #000000;
+}
 body {
-    background-color: #0e0617;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: var(--cb);
+    background: url('./img/art.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom left;
+    color: var(--cw);
+    font-family: 'DotGothic16', monospace;
     font-size: 20px;
-    text-align:center;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -11,43 +22,55 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #140820;
+    background-color: var(--c3);
+    border-bottom: 5px solid var(--c1);
+    width:600px;
+    margin:0 auto;
 }
 
 h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 main {
     padding: 20px;
+    max-width:700px;
+    margin: 0 auto;
 }
 
 article {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #111121;
+    border: 2px dashed var(--c1);
     border-radius: 5px;
-    background-color: #140820;
+    background-color: var(--c3);
+    box-shadow: 0 0 10px var(--c1);
 }
 
 h2 {
     margin-top: 0;
+    font-size: 1.8em;
 }
 
 h2 a {
-    color: white;
+    color: var(--cw);
     text-decoration: none;
+    font-weight: bold;
 }
 
 h2 a:hover {
     text-decoration: underline;
+    color: var(--c1);
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #140820;
+    background-color: var(--c2);
     position: relative;
     bottom: 0;
     width: 100%;
+    border-top: 5px solid var(--c1);
+    font-size: 0.8em;
 }

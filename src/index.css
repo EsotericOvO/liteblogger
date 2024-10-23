@@ -2,9 +2,9 @@
     --primary: #8B0A1A;
     --primaryDark: #5C0A0A;
     --primaryLight: #B30000;
-    --secondary: #220000;
+    --secondary: #330000;
     --secondaryDark: #4C0033;
-    --secondaryLight: #7F0066;
+    --secondaryLight: #3F0000;
     --accent: #FFC080;
     --accentDark: #FF9900;
     --accentLight: #FFA07A;
@@ -12,6 +12,7 @@
     --textLight: #cccccc;
     --background: #2f0606;
     --articleBackground: #440000;
+    --crimsonDark: #2B0000;
 }
 
 body {
@@ -28,39 +29,44 @@ body {
     text-shadow: 1px 1px 1px #000000;
 }
 
-header nav {
-    float: left;
-    margin-right: 20px;
-}
 header {
     background-color: var(--primary);
     color: var(--text);
-    padding: 20px;
-<<<<<<< HEAD
+    padding: 3px;
     border-bottom: 1px solid var(--crimsonDark);
     text-align: center;
     border-radius: 5px 5px 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-=======
-    background-color: var(--c3);
-    border-bottom: 5px solid var(--c1);
-    max-width:600px;
-    margin:0 auto;
->>>>>>> 97795b7f746a86ac9e0a22ab92c1492e5e2120fe
 }
-h1 {
+
+header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     color: var(--text);
     text-shadow: 2px 2px 2px #000000;
 }
 
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
 main {
-    max-width: 1200px;
+    max-width: 95vw;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--secondary);
+    background-color: #330000;
     border: 1px solid var(--secondaryDark);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -91,18 +97,4 @@ h2 a {
 h2 a:hover {
     text-decoration: underline;
     color: var(--accent);
-}
-
-footer {
-    background-color: var(--primary);
-    color: var(--text);
-    padding: 10px;
-    border-top: 1px solid var(--primaryDark);
-    text-align: center;
-    font-size: 12px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

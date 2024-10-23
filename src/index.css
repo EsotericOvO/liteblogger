@@ -1,76 +1,101 @@
 :root {
-    --cw: #bdf;
-    --c1: #fbf;
-    --c2: #990000;
-    --c3: #330000;
-    --cb: #000000;
+    --primary: #8B0A1A;
+    --primaryDark: #5C0A0A;
+    --primaryLight: #B30000;
+    --secondary: #220000;
+    --secondaryDark: #4C0033;
+    --secondaryLight: #7F0066;
+    --accent: #FFC080;
+    --accentDark: #FF9900;
+    --accentLight: #FFA07A;
+    --text: #ffffff;
+    --textLight: #cccccc;
+    --background: #2f0606;
+    --articleBackground: #440000;
 }
+
 body {
-    background-color: var(--cb);
+    background-color: var(--background);
     background: url('./img/art.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom left;
-    color: var(--cw);
     font-family: 'DotGothic16', monospace;
-    font-size: 20px;
-    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text);
     margin: 0;
     padding: 0;
+    text-shadow: 1px 1px 1px #000000;
 }
 
+header nav {
+    float: left;
+    margin-right: 20px;
+}
 header {
-    text-align: center;
+    background-color: var(--primary);
+    color: var(--text);
     padding: 20px;
-    background-color: var(--c3);
-    border-bottom: 5px solid var(--c1);
-    width:600px;
-    margin:0 auto;
+    border-bottom: 1px solid var(--crimsonDark);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text);
+    text-shadow: 2px 2px 2px #000000;
 }
 
 main {
-    padding: 20px;
-    max-width:700px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondaryDark);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 article {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 2px dashed var(--c1);
+    background-color: var(--articleBackground);
+    border: 1px solid var(--secondaryDark);
     border-radius: 5px;
-    background-color: var(--c3);
-    box-shadow: 0 0 10px var(--c1);
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     margin-top: 0;
-    font-size: 1.8em;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text);
+    text-shadow: 1px 1px 1px #000000;
 }
 
 h2 a {
-    color: var(--cw);
+    color: var(--text);
     text-decoration: none;
-    font-weight: bold;
 }
 
 h2 a:hover {
     text-decoration: underline;
-    color: var(--c1);
+    color: var(--accent);
 }
 
 footer {
-    text-align: center;
+    background-color: var(--primary);
+    color: var(--text);
     padding: 10px;
-    background-color: var(--c2);
+    border-top: 1px solid var(--primaryDark);
+    text-align: center;
+    font-size: 12px;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 5px solid var(--c1);
-    font-size: 0.8em;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

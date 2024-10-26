@@ -15,6 +15,14 @@
     --crimsonDark: #2B0000;
 }
 
+code {
+    color: #f8f8f2;
+    background-color: #282a36;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
 body {
     background-color: var(--background);
     background: url('./img/art.jpg');
@@ -63,7 +71,7 @@ header nav a:hover {
 }
 
 main {
-    max-width: 95vw;
+    max-width: 94vw;
     margin: 0 auto;
     padding: 20px;
     background-color: #330000;
@@ -83,7 +91,7 @@ article {
 
 h2 {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--text);
     text-shadow: 1px 1px 1px #000000;
